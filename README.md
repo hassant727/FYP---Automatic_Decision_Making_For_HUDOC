@@ -9,5 +9,9 @@ Automatic Decision Making for The European Court of Human Rights
 In this project, we plan to focus on the trustworthiness of such approaches by:
 
 . Surveying the literature of LJP for ECHR cases, with a focus on the explainability reliability of such techniques. (part 1)
+
+
 . Create an open-source crawler to collect updated data and make them publicly available to boost research in this field. (part 2)
+
+
 . Replicate existing NLP techniques and evaluate possible ways to improve their trustworthiness. (part 3)
