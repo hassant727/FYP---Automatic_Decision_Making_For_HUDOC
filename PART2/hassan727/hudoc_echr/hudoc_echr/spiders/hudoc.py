@@ -71,18 +71,10 @@ class HudocSpider(scrapy.Spider):
             'facts': (''.join(self.extract_text_nodes(
                 response.xpath('//span[contains(text(), "THE FACTS")]/following::p[1]')))).replace('\'', '').replace(
                 '\"', '').replace(':', '').replace(';', ''),
-            'fait': (''.join(self.extract_text_nodes(
-                response.xpath('//span[contains(text(), "EN FAIT")]/following::p[1]')))).replace('\'', '').replace('\"',
-                                                                                                                   '').replace(
-                ':', '').replace(';', ''),
+        
             'conclusion': (''.join(self.extract_text_nodes(
-                response.xpath('//span[contains(text(), "Conclusion(s)")]/following::p[1]')))).replace('\'',
-                                                                                                       '').replace('\"',
-                                                                                                                   '').replace(
+                response.xpath('//span[contains(text(), "Conclusion(s)")]/following::p[1]')))).replace('\'',                                                                                          '').replace('\"',                                                                                                   '').replace(
                 ':', '').replace(';', ''),
-            'droit': (''.join(self.extract_text_nodes(
-                response.xpath('//span[contains(text(), "EN DROIT")]/following::p[1]')))).replace('\'', '').replace(
-                '\"', '').replace(':', '').replace(';', ''),
             'Law': (''.join(
                 self.extract_text_nodes(response.xpath('//span[contains(text(), "THE LAW")]/following::p')))).replace(
                 '\'', '').replace('\"', '').replace(':', '').replace(';', ''),
